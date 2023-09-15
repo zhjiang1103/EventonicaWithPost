@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "react-animated-heart": "^0.0.8"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "vitest": "^0.34.4"
   }
 }
