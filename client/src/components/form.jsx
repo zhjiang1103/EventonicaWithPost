@@ -8,11 +8,13 @@ const FormEvent = (props) => {
     const userLocation = useRef();
     const userCategory = useRef();
     const userDate = useRef();
+    const userFavourite = useRef();
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const userEvent = {title: userTitle.current?.value, category: userCategory.current?.value, location: userLocation?.current.value, eventtime: userDate?.current.value}
-        //console.log("Inside the component", userEvent);
+        const userEvent = {title: userTitle.current?.value, category: userCategory.current?.value, location: userLocation.current?.value, eventtime: userDate.current?.value, favourite: userFavourite.current?.value}
+        console.log("Inside the component", userEvent);
         props.submit(userEvent);
        
     }
@@ -25,13 +27,16 @@ const FormEvent = (props) => {
             <input type="text" name="title" required placeholder="Title of your Event" ref={userTitle}/>
 
             <label>Event Category</label>
-            <input type="text" name="title" required placeholder="Category of your Event" ref={userCategory}/>
+            <input type="text" name="category" required placeholder="Category of your Event" ref={userCategory}/>
 
             <label>Event Location</label>
             <input type="text" name="location" required placeholder="Where will be your event" ref={userLocation}/>
 
             <label>Event Date</label>
-            <input type="text" name="title" required placeholder="Date of your Event" ref={userDate}/>
+            <input type="text" name="date" required placeholder="Date of your Event" ref={userDate}/>
+
+            <label>Favourite Event?</label>
+            <input type="text" name="favourite" required placeholder="Please enter true or false" ref={userFavourite}/>
 
             <button type="submit">Submit</button>
         </form>
