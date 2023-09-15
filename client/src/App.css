@@ -16,6 +16,12 @@ h1 {
 
 form{
   margin-top: 50px;
+  margin-left: 10%;
+}
+
+input{
+  margin-left: 2%;
+  margin-bottom: 2%;
 }
 
 div.react-confirm-alert-body{
