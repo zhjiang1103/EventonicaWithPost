@@ -49,11 +49,11 @@ app.post('/api/events', async (req, res) =>{
         const { title, category, location, eventtime, favourite } = req.body;
         // syntax = await db.query("", [])
         const result = await db.query(
-        "INSERT INTO events (title, category, location, eventtime, favourite) VALUES ($1, $2, $3, $4, $5) RETURNING *",
+        "INSERT INTO events1 (title, category, location, eventtime, favourite) VALUES ($1, $2, $3, $4, $5) RETURNING *",
             [title, category,location, eventtime, favourite]
         );
         let dbResponse = result.rows[0];
-        console.log(dbResponse)
+        console.log("db", dbResponse)
         res.json(dbResponse);
     } catch(error){
         console.log(error);
@@ -66,7 +66,7 @@ app.delete('/api/events/:id', async (req, res) =>{
     //TODO - make this delete request work
     try{
     const eventId = req.params.id;
-    const deleteOperation = await db.query("DELETE FROM events WHERE id=$1", [eventId]);
+    const deleteOperation = await db.query("DELETE FROM events1 WHERE id=$1", [eventId]);
     console.log(deleteOperation);
     res.status(200).end()
 

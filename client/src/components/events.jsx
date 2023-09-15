@@ -48,12 +48,12 @@ const handleDeleteRequest = (id) => {
 //     headers: {
 //       "Content-Type": "application/json",
 //     },
-//     body: JSON.stringify(updatedEventData),
+//     body: JSON.stringify(updatedData),
 //   })
 //   .then((reponse) => reponse.json())
 //     .then((updatedData) => {
-//       console.log("Inside the put line 54", updatedEventData)
-//       setEvents([...events, title: updatedEventData])
+//       console.log("Inside the put line 54", updatedData)
+//       setEvents([...events, favourite: updatedData])
 //     })
 //   }
   //const handleTitleChange = (e) => {
