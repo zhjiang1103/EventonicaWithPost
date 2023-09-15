@@ -77,9 +77,19 @@ app.delete('/api/events/:id', async (req, res) =>{
 })
 
 //UPDATING something in the DB
-// app.put('/api/events/:id', async (req, res) =>{
-
-// })
+ app.put('/api/events/:id', async (req, res) =>{
+    try{
+        const eventId = req.params.id;
+        const { favourite } = req.body; // receive the new favourite value in the request body
+        const updateOperation = await db.query("UPDATE events1 SET favourite=$1 WHERE id=$2", [favourite, eventId]);
+        console.log(updateOperation);
+        res.status(200).end()
+    
+        } catch(error){
+            console.log(error);
+            res.status(400).json({error});
+        }
+ })
 
 
 app.listen(PORT, () => console.log(`Hola! Server running on Port http://localhost:${PORT}`));

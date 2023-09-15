@@ -29,7 +29,10 @@ const EventCard = (props) => {
     const handleToggleFavourite = () => {
       dispatch({ type: 'TOGGLE_FAVORITE' });
       setIsFavourite(state.favourite);
+      const idToUpdate = props.event.id;
+      let updatedFavourite = {"favourite":isFavourite};
       console.log("State: line 31", state);
+      props.onFavourite(idToUpdate,updatedFavourite)
     };
   
     

@@ -42,20 +42,20 @@ const handleDeleteRequest = (id) => {
   })
 }
 
-// const handlePutRequest = (id, updatedData) => {
-//   fetch(`http://localhost:8080/api/events/${id}`, {
-//     method: "PUT",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify(updatedData),
-//   })
-//   .then((reponse) => reponse.json())
-//     .then((updatedData) => {
-//       console.log("Inside the put line 54", updatedData)
-//       setEvents([...events, favourite: updatedData])
-//     })
-//   }
+const handlePutRequest = (id, updatedData) => {
+  fetch(`http://localhost:8080/api/events/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(updatedData),
+  })
+  .then((reponse) => reponse.json())
+    .then((updatedData) => {
+      console.log("Inside the put line 54", updatedData)
+      setEvents([...events, updatedData])
+    })
+  }
   //const handleTitleChange = (e) => {
   // e.preventDefault();
   // let newTitle = e.target.value;
@@ -89,7 +89,7 @@ const handleDeleteRequest = (id) => {
     <div>
     <CardGroup className="Events">
             {events.map(event =>
-            <EventCard key={event.id} event={event} onDelete={handleDeleteRequest} />
+            <EventCard key={event.id} event={event} onDelete={handleDeleteRequest} onFavourite={handlePutRequest} />
             )}
     </CardGroup>
     </div>
