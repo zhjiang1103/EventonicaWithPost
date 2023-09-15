@@ -116,8 +116,8 @@ const EventCard = (props) => {
           <Card.Title>{props.event.title}</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">Date: {!props.event.eventtime ? "TBD" : moment(props.event.eventtime).format('MMMM Do, YYYY')}</Card.Subtitle>
           <Card.Text>
-            Category: {props.event.category}
-            Location: {props.event.location}
+            <div>Category: {props.event.category}</div>
+            <div>Location: {props.event.location}</div>
           </Card.Text>
           <button onClick={handleDelete}>Delete</button>
           <Heart  isClick={isFavourite} onClick={handleToggleFavourite} >Favourite</Heart>
