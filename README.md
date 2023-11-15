@@ -2,7 +2,7 @@
 
 #### Once you have successfully setup this template and initial database, the view will look like this:
 
-![Initial View of the project](https://raw.githubusercontent.com/Yosolita1978/screenshoots/50a5573f21c1265d20d838a36b98588f9b4eefce/2023/H1/Screen%20Shot%202023-03-09%20at%208.03.32%20PM.png)
+![Initial View of the project](https://raw.githubusercontent.com/zhjiang1103/EventonicaWithPost/6886eff4e1a4915f6a85b6d35f0ebcc0039f1f8e/Screen%20Shot%202023-11-15%20at%2010.55.52%20AM.png)
 ### Initial Set-up steps
 
 1. Go to your source directory in your terminal and run the command `git clone https://github.com/zhjiang1103/EventonicaWithPost.git <NAMENEWDIRECTORY>`
