@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import EventCard from "./event";
 import FormEvent from './form';
-//import EditForm from './editForm'
 import CardGroup from 'react-bootstrap/CardGroup';
 
 
@@ -56,31 +55,7 @@ const handlePutRequest = (id, updatedData) => {
       setEvents([...events, updatedData])
     })
   }
-  //const handleTitleChange = (e) => {
-  // e.preventDefault();
-  // let newTitle = e.target.value;
-  // setEvent((event) => ({ ...event, title: newTitle }));
-  //console.log(event.title);}
-
-//}
-// const handleLocationChange = (e) => {
-//   e.preventDefault();
-//   let newLocation = e.target.value;
-//   setEvent((event) => ({ ...event, location: newLocation }));
-//   //console.log(event.location);
-// }
-// const handleDateChange = (e) => {
-//   e.preventDefault();
-//   let newDate = e.target.value;
-//   setEvent((event) => ({ ...event, eventtime: newDate }));
-//   //console.log(event.eventtime);
-// }
-
-// const handleSubmit = (e) => {
-//   e.preventDefault();
-//   setEvent(event);
-//   props.postRequest(event);
-// }
+  
   
   useEffect(() => {getRequest()}, []);
 
@@ -95,7 +70,7 @@ const handlePutRequest = (id, updatedData) => {
     </div>
     <div>
         <FormEvent  submit={handlePostRequest}/>
-        {/* <EditForm submit={handlePutRequest}/> */}
+  
     </div>
     </>
   );

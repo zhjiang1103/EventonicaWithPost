@@ -44,8 +44,7 @@ app.post('/api/events', async (req, res) =>{
     */
 
     try {
-        // const userData = req.body;
-        // console.log("In the server", userData);
+       
         const { title, category, location, eventtime, favourite } = req.body;
         // syntax = await db.query("", [])
         const result = await db.query(
