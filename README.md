@@ -1,8 +1,9 @@
+
 # Quick-setup 
 
 #### Once you have successfully setup this template and initial database, the view will look like this:
 
-![Initial View of the project](https://github.com/zhjiang1103/animaltracker/blob/main/Screen%20Shot%202023-11-15%20at%2011.41.50%20AM.png?raw=true)
+![Initial View of the project](https://github.com/zhjiang1103/EventonicaWithPost/blob/fixing/Screen%20Shot%202023-11-15%20at%2010.55.52%20AM.png?raw=true)
 ### Initial Set-up steps
 
 1. Go to your source directory in your terminal and run the command `git clone https://github.com/zhjiang1103/EventonicaWithPost.git <NAMENEWDIRECTORY>`
