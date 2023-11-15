@@ -59,55 +59,10 @@ const EventCard = (props) => {
         ]
       });
     }
-    //props.onDelete(idToDelete)
+   
+   
+    
 
-    // const onAttributeEdit = (eventId, attribute, newValue) => {
-    //   // Find the event by ID
-    //   let idToEdit=props.event.id;
-    //   const updatedEvents = props.event.map((event) => {
-    //     if ( idToEdit === eventId) {
-    //       // Create a new event object with the updated attribute
-    //       return {
-    //         ...event,
-    //         [attribute]: newValue,
-    //       };
-    //     }
-    //     return event;
-    //   });
-
-    //   console.log(`Editing ${attribute} for event with ID ${eventId}`);
-    // }
-    // const EventItem = (props, onAttributeEdit ) => {
-    //   const handleEditAttribute = (attribute) => {
-    //     const newValue = prompt(`Enter new ${attribute}:`, event[attribute]);
-
-    //     if (newValue !== null) {
-    //       // Call the onAttributeEdit function to update the event attribute
-    //       onAttributeEdit(event.id, attribute, newValue);
-    //     }
-    //   };
-
-    // const handleEdit = () => {
-    //   const idToEdit = props.event.id;
-    //   confirmAlert({
-    //     message: `Which information do you want to edit for this event: ${props.event.title}?`,
-    //     buttons: [
-    //       {
-    //         label: 'Title',
-    //         onClick: () => handleAttributeEdit(idToEdit, 'title')//props.onTitleEdit(idToEdit)
-    //       },
-    //       {
-    //         label: 'Location',
-    //         onClick: () => console.log('Location')//props.onLocationEdit(idToEdit)
-    //       },
-    //       {
-    //         label: 'Event time',
-    //         onClick: () => console.log('Time')//props.onTimeEdit(idToEdit)
-    //       },
-    //     ]
-    //   });
-
-    // }
 
 
     return (
