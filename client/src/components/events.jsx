@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import EventCard from "./event";
+import EventCard from "./EventCard";
 import FormEvent from './form';
 import CardGroup from 'react-bootstrap/CardGroup';
 
